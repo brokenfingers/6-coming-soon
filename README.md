@@ -14,9 +14,11 @@ Design: [Sign up](https://media.discordapp.net/attachments/850245533838868480/85
 
 ## Project features
 
--   Github pages (multi-page)
+-   Github page
 -   Responsive design
 -   HTML form
+-   CSS animation
+-   FontAwesome icons
 -   CSS background images
 -   CSS fixed image
 

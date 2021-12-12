@@ -63,13 +63,23 @@ body{
 }
 
 @media screen and (max-width: 600px) {
-    .hero-container,
+    /* .hero-container,
     .content-container,
     .footer-container,
     .socials {
         width: 400px;
         margin-left: calc((100% - 400px) / 2);
+    } */
+
+    :root{
+        --small-full-width: 400px;
+        --clock-digit-size: 40px;
+        --clock-position: static;
     }
 
-
+    .clock-digits {
+        font-size: 40px;
+    }
+    
+    
 }

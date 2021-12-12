@@ -1,0 +1,23 @@
+.clock-digits{
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFF;
+
+}
+
+.clock-title{
+    color: #FFF;
+    width: 100%;
+    text-align: center;
+}
+
+.clock-group{
+    list-style-type: none;
+    display: inline-block;
+    
+
+}
+
+.clock-group + .clock-group{
+    margin-left: 30px;
+}

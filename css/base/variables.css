@@ -4,4 +4,7 @@
 
     --big-full-width: 1000px;
     --big-full-margin: calc((100% - var(--big-full-width)) / 2);
+
+    --clock-digit-size: 67px;
+    --clock-position: absolute;
 }

@@ -32,6 +32,7 @@
 </head>
 <body>
     <main class="hero">
+        <div class="hero-background"></div>
         <div class="hero-container">
             <img class="logo-colored" src="./img/favicon-template.png" alt="Company logo">
             <h1>COMING SOON</h1>
@@ -50,7 +51,7 @@
                     <p class="clock-title">MINUTES</p>
                 </li>
                 <li class="clock-group">
-                    <p class="clock-digits">39</p>
+                    <p id="seconds" class="clock-digits">39</p>
                     <p class="clock-title">SECONDS</p>
                 </li>
             </ul>
@@ -75,6 +76,16 @@
 
         </div>
     </footer>
+    <script>
+        const timeHolder = document.getElementById('seconds');
+        let seconds =  parseInt(timeHolder.textContent);
+        
+        function secondsDown() {
+            seconds = (seconds == 0) ? 59 : --seconds;
+            timeHolder.textContent = seconds;
+        }
+        setInterval(secondsDown, 1000);
+    </script>
     
 </body>
 </html>

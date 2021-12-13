@@ -19,15 +19,13 @@ body{
 
 
 
-.content{
-    height: 70vh;
-}
+
 
 .content-container {
-    width:1000px;
-    background-color: #e9c8d3;
+    width: var(--big-full-width);
+    /* background-color: #e9c8d3; */
     height: 100%;
-    margin-left: calc((100% - 1000px) / 2);
+    margin-left: var(--big-full-margin);
 }
 
 
@@ -59,26 +57,71 @@ body{
         width: var(--small-full-width);
         margin-left: var(--small-full-margin);
     }
+    :root{
+        --form-name-width: 100%;
+        --form-email-width: 100%;
+    }
 }
 
 @media screen and (max-width: 600px) {
-    /* .hero-container,
-    .content-container,
-    .footer-container,
-    .socials {
-        width: 400px;
-        margin-left: calc((100% - 400px) / 2);
-    } */
-
+    
     :root{
         --small-full-width: 400px;
         --clock-digit-size: 40px;
         --clock-position: static;
+        --right-block-width: 90%
+        --right-block-position: none;
+        --left-block-width: 90%;
+        --left-block-position: none;
+        --form-name-width: 100%;
+        --form-email-width: 100%;
+        
     }
 
     .clock-digits {
         font-size: 40px;
     }
+
     
     
+}
+
+@media screen and (max-height: 600px) {
+        :root{
+            --h1-size: 44px;
+            --logo-margin-top: 17px;
+            
+            --object-bottom-small: 20px;
+            --object-bottom-medium: 30px;
+            --object-bottom-large: 60px;
+
+            --logo-size: 35px;
+           
+            --form-position: static;
+            --clock-digit-size: 47px;
+           
+            --form-position: static;
+            --clock-position: static;
+           
+        }
+}
+
+@media screen and (max-height: 400px) {
+    :root{
+        --h1-size: 25px;
+        --logo-size: 31px;
+        --logo-margin-top: 10px;
+        
+        --object-bottom-small: 7px;
+        --object-bottom-medium: 10px;
+        --object-bottom-large: 20px;
+
+
+        --clock-digit-size: 36px;
+        
+        --form-position: static;
+        --clock-position: static;
+        
+    }
+
 }

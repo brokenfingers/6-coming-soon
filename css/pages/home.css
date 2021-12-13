@@ -30,9 +30,14 @@
 
 }
 
-.hero {
-    /* background-color:hsl(197, 68%, 71%); */
-    
+
+.cousinGradient{
+    position:fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: rgb(41,163,228);
+background: linear-gradient(0deg, rgba(41,163,228,1) 0%, rgba(114,164,239,1) 31%, rgba(213,234,251,1) 70%, rgba(202,215,249,1) 85%, rgba(165,148,242,1) 100%);
 }
 
 .hero-background{
@@ -41,8 +46,7 @@
     background-image: url(../../img/MicrosoftTeams-image.png);
     background-position: center;
     background-size: cover;
-    position:fixed;
-    z-index: -1;
+    
 }
 
 .hero-container {

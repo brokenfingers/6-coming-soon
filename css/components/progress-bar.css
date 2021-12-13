@@ -1,37 +1,40 @@
 .progress-bars{
     width:100%;
-    background-color:tomato;
+    /* background-color:tomato; */
 }
 
 .progress-row{
-   background-color: violet;
+   /* background-color: violet; */
    position:relative;
-   margin: 10px 10px;
+   margin-bottom: 20px;
 
 }
 
+.progress-row > .progress-title {
+    padding-bottom: 10px;
+}
 
 
 .progress-row > .completed-bar{
     height: 3px;
     width: 70%;
-    background-color: rgb(75, 45, 247);
+    background-color: #24B2F5;
     position: absolute;
     left: 0;
-    bottom: 1px;
+    bottom: 0;
     z-index: 1;
 }
 
 .progress-row > .completed-bar > .progress-percent{
     position: absolute;
-    bottom:0;
-    right: 0;
+    bottom:10px;
+    left: 100%;
 }
 
 .progress-row > .grey-bar{
     height: 3px;
     width: 100%;
-    background-color: #aaa;
+    background-color: #EDEDED;
     position: absolute;
     left: 0;
     bottom: 0;

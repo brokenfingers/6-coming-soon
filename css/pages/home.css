@@ -207,3 +207,16 @@ h1+p{
     text-align: right;
 }
 
+
+.progress-bars{
+    margin-top: var(--header-margin-y);
+}
+.progress-row:nth-child(1)>.completed-bar{
+    width: 94%;
+}
+.progress-row:nth-child(2)>.completed-bar{
+    width: 86%;
+}
+.progress-row:nth-child(3)>.completed-bar{
+    width: 90%;
+}

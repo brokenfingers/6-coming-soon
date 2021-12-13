@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=" classth=device- classth, initial-scale=1.0">
+     <link rel="stylesheet" href="./css/pages/home.css">
+     <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!-- INITIAL STYLES: -->
+    <!-- reset.css (+ base elements) -->
+    <!-- variables.css -->
+    <!-- layout.css -->
+
+    <!-- COMPONENTS: -->
+    <!-- button.css -->
+    <!-- form.css -->
+    <!-- clock.css -->
+    <!-- mouse.css -->
+    <!-- progress-bar.css -->
+
+    <!-- CUSTOM: -->
+    <!-- custom.css -->
+    <title>Coming soon</title>
+</head>
+<body>
+    <main class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-container">
+            <img class="logo-colored" src="./img/favicon-template.png" alt="Company logo">
+            <h1>COMING SOON</h1>
+            <p>An awesome new company for web resources is coming very soon. Enter your email to request an early invitation!</p>
+            <ul class="clock-digital">
+                <li class="clock-group">
+                    <p class="clock-digits">432</p>
+                    <p class="clock-title">DAYS</p>
+                </li>
+                <li class="clock-group">
+                    <p class="clock-digits">09</p>
+                    <p class="clock-title">HOURS</p>
+                </li>
+                <li class="clock-group">
+                    <p class="clock-digits">37</p>
+                    <p class="clock-title">MINUTES</p>
+                </li>
+                <li class="clock-group">
+                    <p id="seconds" class="clock-digits">39</p>
+                    <p class="clock-title">SECONDS</p>
+                </li>
+            </ul>
+            <form class="form">
+                <label for="email">Email</label>
+                <input id="email" type="email" required autocomplete="email" placeholder="Type your email">
+                <button class="btn" type="submit">Subscribe Now</button>
+            </form>
+            <img class="mouse" src="./img/mouse-temporary.png" alt="part of design">
+        </div>
+    </main>
+    <section class="content">
+        <div class="content-container">
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="socials">
+
+        </div>
+        <div class="footer-container">
+
+        </div>
+    </footer>
+    <script>
+        const timeHolder = document.getElementById('seconds');
+        let seconds =  parseInt(timeHolder.textContent);
+        
+        function secondsDown() {
+            seconds = (seconds == 0) ? 59 : --seconds;
+            timeHolder.textContent = seconds;
+        }
+        setInterval(secondsDown, 1000);
+    </script>
+    
+</body>
+</html>

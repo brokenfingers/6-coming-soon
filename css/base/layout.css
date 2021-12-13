@@ -19,15 +19,13 @@ body{
 
 
 
-.content{
-    height: 70vh;
-}
+
 
 .content-container {
-    width:1000px;
-    background-color: #e9c8d3;
+    width: var(--big-full-width);
+    /* background-color: #e9c8d3; */
     height: 100%;
-    margin-left: calc((100% - 1000px) / 2);
+    margin-left: var(--big-full-margin);
 }
 
 
@@ -59,26 +57,31 @@ body{
         width: var(--small-full-width);
         margin-left: var(--small-full-margin);
     }
+    :root{
+        --form-name-width: 100%;
+        --form-email-width: 100%;
+    }
 }
 
 @media screen and (max-width: 600px) {
-    /* .hero-container,
-    .content-container,
-    .footer-container,
-    .socials {
-        width: 400px;
-        margin-left: calc((100% - 400px) / 2);
-    } */
-
+    
     :root{
         --small-full-width: 400px;
         --clock-digit-size: 40px;
         --clock-position: static;
+        --right-block-width: 90%
+        --right-block-position: none;
+        --left-block-width: 90%;
+        --left-block-position: none;
+        --form-name-width: 100%;
+        --form-email-width: 100%;
+        
     }
 
     .clock-digits {
         font-size: 40px;
     }
+
     
     
 }

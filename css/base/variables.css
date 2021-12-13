@@ -7,4 +7,17 @@
 
     --clock-digit-size: 67px;
     --clock-position: absolute;
+
+
+    --header-margin-y: 20px;
+    --h2-padding-top: 60px;
+
+    --left-block-position: left;
+    --left-block-width: 50%;
+
+    --right-block-position: right;
+    --right-block-width: 40%;
+
+    --form-name-width: 46%;
+    --form-email-width: 46%;
 }

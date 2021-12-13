@@ -10,8 +10,7 @@ body{
 
 .hero-container{
     height: 100%;
-    width: var(--small-full-width);
-    background-color:#5bd0ff;
+    width: var(--small-full-width);  
     margin-left: var(--small-full-margin);
 
 }

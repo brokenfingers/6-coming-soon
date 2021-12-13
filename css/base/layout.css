@@ -85,3 +85,43 @@ body{
     
     
 }
+
+@media screen and (max-height: 600px) {
+        :root{
+            --h1-size: 44px;
+            --logo-margin-top: 17px;
+            
+            --object-bottom-small: 20px;
+            --object-bottom-medium: 30px;
+            --object-bottom-large: 60px;
+
+            --logo-size: 35px;
+           
+            --form-position: static;
+            --clock-digit-size: 47px;
+           
+            --form-position: static;
+            --clock-position: static;
+           
+        }
+}
+
+@media screen and (max-height: 400px) {
+    :root{
+        --h1-size: 25px;
+        --logo-size: 31px;
+        --logo-margin-top: 10px;
+        
+        --object-bottom-small: 7px;
+        --object-bottom-medium: 10px;
+        --object-bottom-large: 20px;
+
+
+        --clock-digit-size: 36px;
+        
+        --form-position: static;
+        --clock-position: static;
+        
+    }
+
+}

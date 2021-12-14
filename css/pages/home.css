@@ -9,7 +9,7 @@
 /* components */
 
 /* @import '../components/button.css'; */
-/* @import '../components/clock.css'; */
+@import '../components/clock.css';
 /* @import '../components/form.css'; */
 @import '../components/mouse.css';
 /* @import '../components/progress-bar.css'; */
@@ -21,6 +21,21 @@
     background-color: var(--bg-color);
 }
 
+.hero > .row-short {
+    text-align: center;
+}
+
+.logo{
+
+}
+
+.main-title{
+
+}
+
+.main-description{
+
+}
 
 .footer {
     background-color: var(--bg-color);

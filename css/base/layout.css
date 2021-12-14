@@ -47,6 +47,14 @@
         width: 400px;
         margin: 0 calc(50% - 200px);
     }
+    .leftBlock,
+    .rightBlock
+    {   
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+
 }
 
 @media (max-width: 500px) {

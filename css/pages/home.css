@@ -68,6 +68,21 @@
 .hero .clock{
     
 }
+
+.hero  .form .input{
+    width: 80%;
+    margin: 0 15px 20px;
+    color:#fff;
+    border-color: currentColor;
+
+}
+
+
+.hero .form .input::placeholder{
+    color:currentColor;
+}
+
+
 /* HERO end*/
 
 
@@ -102,6 +117,17 @@
 
 .progress-bars .progress-row{
     
+}
+
+
+.content .form .btn{
+    float: right;
+}
+
+@media (min-width: 900px) {
+    .content input.input{
+        width: calc(50% - 10px);
+    }  
 }
 /* Main content end*/
 

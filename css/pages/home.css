@@ -4,7 +4,7 @@
 @import '../base/layout.css';
 
 /* 3rd party */
-
+@import '../components/font-awesome.min.css';
 
 /* components */
 
@@ -13,6 +13,7 @@
 @import '../components/form.css';
 @import '../components/mouse.css';
 @import '../components/progress-bar.css';
+
 
 
 /* custom style below */

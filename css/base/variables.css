@@ -1,35 +1,3 @@
 :root{
-    --logo-margin-top: 40px;
-    --logo-margin-bottom: 30px; 
-    --logo-size: 50px;
-    --form-position: absolute;
-    --hero-text-margin-bottom: 69px;
-
-    --object-bottom-small: 20px;
-    --object-bottom-medium: 30px;
-    --object-bottom-large: 60px;
-
-    --h1-size: 49px;
-
-    --small-full-width: 600px;
-    --small-full-margin: calc((100% - var(--small-full-width)) / 2);
-
-    --big-full-width: 1000px;
-    --big-full-margin: calc((100% - var(--big-full-width)) / 2);
-
-    --clock-digit-size: 67px;
-    --clock-position: absolute;
-    --clock-margin-bottom: 20px;
-
-    --header-margin-y: 20px;
-    --h2-padding-top: 60px;
-
-    --left-block-position: left;
-    --left-block-width: 50%;
-
-    --right-block-position: right;
-    --right-block-width: 40%;
-
-    --form-name-width: 46%;
-    --form-email-width: 46%;
+    --bg-color: rgb(41,163,228);
 }

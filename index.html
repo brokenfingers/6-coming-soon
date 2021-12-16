@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content=" classth=device- classth, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="./css/pages/home.css">
-     <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+     <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+    <meta name="msapplication-config" content="./img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <!-- INITIAL STYLES: -->
     <!-- reset.css (+ base elements) -->
@@ -26,35 +26,35 @@
     <!-- mouse.css -->
     <!-- progress-bar.css -->
 
-    <!-- CUSTOM: -->
+    <!-- CUSTOM: --> 
     <!-- custom.css -->
     <title>Coming soon</title>
 </head>
 <body>
-    <main class="hero">
+    <section class="hero bg-primary">
         <div class="cousinGradient"><div class="hero-background"></div></div>
-        <div class="hero-container">
-            <img class="logo-colored" src="./img/favicon-template.png" alt="Company logo">
-            <h1>COMING SOON</h1>
-            <p>An awesome new company for web resources is coming very soon. Enter your email to request an early invitation!</p>
-            <ul class="clock-digital">
-                <li class="clock-group">
-                    <p class="clock-digits">432</p>
-                    <p class="clock-title">DAYS</p>
-                </li>
-                <li class="clock-group">
-                    <p class="clock-digits">09</p>
-                    <p class="clock-title">HOURS</p>
-                </li>
-                <li class="clock-group">
-                    <p class="clock-digits">37</p>
-                    <p class="clock-title">MINUTES</p>
-                </li>
-                <li class="clock-group">
-                    <p id="seconds" class="clock-digits">39</p>
-                    <p class="clock-title">SECONDS</p>
-                </li>
-            </ul>
+        <div class="hero-container row-short">
+            <img class="logo" src="./img/favicon-template.png" alt="Company logo">
+            <h1 class="main-title">Coming soon</h1>
+            <p class="main-description">An awesome new company for web resources is coming very soon. Enter your email to request an early invitation!</p>
+            <div class="clock">
+                <div class="time">
+                    <p class="value">432</p>
+                    <p class="title">DAYS</p>
+                </div>
+                <div class="time">
+                    <p class="value">09</p>
+                    <p class="title">HOURS</p>
+                </div>
+                <div class="time">
+                    <p class="value">37</p>
+                    <p class="title">MINUTES</p>
+                </div>
+                <div class="time">
+                    <p id="seconds" class="value">39</p>
+                    <p class="title">SECONDS</p>
+                </div>
+            </div>
             <form class="form">
                 <label for="email1">Email</label>
                 <input id="email1" type="email" required autocomplete="email" placeholder="Type your email">
@@ -62,9 +62,9 @@
             </form>
             <img class="mouse" src="./img/mouse-temporary.png" alt="part of design">
         </div>
-    </main>
-    <section class="content">
-        <div class="content-container">
+    </section>
+    <main class="content">
+        <div class="content-container row">
             <div class="leftBlock">
                 <h2 >About startup</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga odit sequi magni obcaecati asperiores veniam dolore sunt reiciendis nobis dolorem minima inventore repudiandae quos odio rerum, commodi a iusto libero.</p>
@@ -89,7 +89,7 @@
             <div class="rightBlock">
                 <h2>Have any question?</h2>
                 <p>You can use contact form below or contact us via e-mail at threedesig@design.com. Contact form is fully working and very easy to customize.</p>
-                <form class="form">
+                <!-- <form class="form">
                     <div class="form-row name-row">
                         <label for="name">Name</label>
                         <input id="name" type="input" required autocomplete="name" placeholder="Name">
@@ -105,19 +105,21 @@
                     <div class="form-row button-row">
                         <button class="btn" type="submit">Send Message</button>
                     </div>
-                </form>
+                </form> -->
 
             </div>
             
         </div>
-    </section>
-    <footer class="footer">
-        <div class="socials">
-
-        </div>
-        <div class="footer-container">
-
-        </div>
+    </main>
+    <footer class="footer bg-primary">
+    
+            <div class="socials row">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium laboriosam adipisci beatae, illum neque molestiae fugit explicabo vero. Perferendis natus eligendi nam commodi doloribus ex assumenda, fugit quam culpa harum?
+            </div>
+            <div class="footer-container row-short">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos labore aliquam dolorum! Repellat repudiandae minima velit. Amet, in? Excepturi, omnis dolor, reprehenderit magnam harum voluptates labore consectetur, libero eius doloremque exercitationem repudiandae praesentium tempora? Eaque accusamus soluta excepturi repudiandae, aliquam voluptatum corporis obcaecati libero cumque perferendis. Eaque aliquam suscipit id necessitatibus vero recusandae accusantium facilis expedita quia eveniet architecto fuga unde, inventore, quasi minus sed neque corporis ut, tenetur impedit voluptate voluptatum consectetur ea cumque. Officia quisquam suscipit ab nulla omnis, quas quo consequatur maxime quis ipsa numquam excepturi hic est id sint libero 
+            </div>
+        
     </footer>
     <script>
         const timeHolder = document.getElementById('seconds');

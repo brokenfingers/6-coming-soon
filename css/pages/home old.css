@@ -1,0 +1,222 @@
+/* base */
+@import '../base/reset.css';
+@import '../base/variables.css';
+@import '../base/layout.css';
+
+/* 3rd party */
+
+
+/* components */
+
+@import '../components/button.css';
+@import '../components/clock.css';
+@import '../components/form.css';
+@import '../components/mouse.css';
+@import '../components/progress-bar.css';
+
+
+/* custom style below */
+
+
+
+
+
+.logo-colored{
+    margin-top: var(--logo-margin-top);
+    margin-bottom: var(--object-bottom-medium);
+    width: var(--logo-size);
+    margin-left: calc((100% - var(--logo-size)) / 2);
+
+}
+
+
+.cousinGradient{
+    position:fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: rgb(41,163,228);
+background: linear-gradient(0deg, rgba(41,163,228,1) 0%, rgba(114,164,239,1) 31%, rgba(213,234,251,1) 70%, rgba(202,215,249,1) 85%, rgba(165,148,242,1) 100%);
+}
+
+.hero-background{
+    width: 100%;
+    height: 100%;
+    background-image: url(../../img/MicrosoftTeams-image.png);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.hero-container {
+    position: absolute;
+    /* background-color:#5bd0ff; */
+}
+
+h1{
+    margin-bottom: var(--object-bottom-small);
+    font-size: var(--h1-size);
+    width: 100%;
+    text-align: center;
+}
+
+h1+p{
+    display: inline-block;
+    margin-bottom: var(--object-bottom-large);
+    width:80%;
+    text-align: center;
+    margin-left: 10%;
+    color: dimgray;
+}
+
+.clock-digital{
+    /* background-color: deeppink; */
+    width: var(--small-full-width);
+    text-align: center;
+    position: var(--clock-position);
+    top: calc((100vh - 100px) / 2);
+    margin-bottom: var(--object-bottom-small);
+}
+
+.clock-digits{
+    font-size: var(--clock-digit-size);
+}
+
+.form label{
+    visibility: hidden;
+    width: 0;
+}
+
+.form {
+    text-align: center;
+    position: var(--form-position);
+    left: 0px;
+    bottom: 70px;
+}
+
+.form>input{
+    width: 70%;
+    padding-bottom: 10px;
+    margin-right: 30px;
+    margin-bottom: var(--object-bottom-small);
+    background-color: transparent;
+    border: none;
+    border-bottom-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    
+}
+
+.form>input::placeholder{
+    color: white;
+    font-size: 15px;
+}
+
+.btn {
+    
+    background: #EA1E64;
+    padding: 9px 12px;   
+    border-radius: 4px;
+    font-size: 15px;   
+}
+
+.btn:hover{
+    background: #ff88b1;
+}
+
+.mouse{
+    width: 30px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content{
+    background-color: #fff;
+}
+
+.content h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: var(--object-bottom-small);
+}
+
+.content-container{
+    display: inline-block;
+    
+}
+
+.leftBlock,
+.rightBlock{
+    padding-top:var(--h2-padding-top);
+    padding-right: 10px;
+    padding-left: 20px;
+    
+}
+
+
+.leftBlock{
+    
+    width: var(--left-block-width);
+    float: var(--left-block-position);
+}
+
+.rightBlock{
+    width: var(--right-block-width);
+    float: var(--right-block-position);
+    margin-bottom: var(--object-bottom-small);
+
+}
+
+.content .form{
+    display: inline-block;
+    margin-top: var(--header-margin-y);
+    position: static;
+}
+
+.content .form textarea{
+    background-color: transparent;
+}
+
+.content input{
+    width:100%;
+    float:left;
+    margin-right: 0;
+    color: #777;
+    border-bottom-color: #777;
+}
+
+.content input::placeholder{
+    color: #777;
+}
+
+.name-row {
+    background-color:rgb(167, 92, 79);
+    width: var(--form-name-width);
+    float:left;
+}
+
+.email-row{
+    width: var(--form-email-width);
+    float: right;
+}
+
+.button-row{
+    width: 100%;
+    text-align: right;
+}
+
+
+.progress-bars{
+    margin-top: var(--header-margin-y);
+}
+.progress-row:nth-child(1)>.completed-bar{
+    width: 94%;
+}
+.progress-row:nth-child(2)>.completed-bar{
+    width: 86%;
+}
+.progress-row:nth-child(3)>.completed-bar{
+    width: 90%;
+}

@@ -8,11 +8,11 @@
 
 /* components */
 
-/* @import '../components/button.css'; */
+@import '../components/button.css';
 @import '../components/clock.css';
-/* @import '../components/form.css'; */
+@import '../components/form.css';
 @import '../components/mouse.css';
-/* @import '../components/progress-bar.css'; */
+@import '../components/progress-bar.css';
 
 
 /* custom style below */
@@ -21,7 +21,7 @@
 
 
 .bg-primary {
-    background-color: var(--bg-color);
+    background-color: var(--primary-color);
 }
 
 /* HERO start*/
@@ -29,7 +29,7 @@
 .hero{
     min-height: 100vh;
     padding-bottom: 30px;
-    background-color: var(--bg-color);
+    background-color: var(--primary-color);
     background: url(../../img/MicrosoftTeams-image.png);
     background-size: cover;
     background-position: center;
@@ -68,13 +68,67 @@
 .hero .clock{
     
 }
+
+.hero  .form .input{
+    width: 80%;
+    margin: 0 15px 20px;
+    color:#fff;
+    border-color: currentColor;
+
+}
+
+
+.hero .form .input::placeholder{
+    color:currentColor;
+}
+
+
 /* HERO end*/
 
 
 /* Main content start*/
 
+.column > *{
+    margin-bottom: 20px;
+}
+.column > *:last-child{
+    margin-bottom: 0;
+}
+
+.content .content-title{
+    text-transform: uppercase;
+    font-size: 20px;
+    
+}
+
+.content .content-description{
+    font-size: 17px;
+    color: #999;
+    
+}
+
+.column .link{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+.column .link:hover{ 
+    text-decoration: underline;
+}
+
+.progress-bars .progress-row{
+    
+}
 
 
+.content .form .btn{
+    float: right;
+}
+
+@media (min-width: 900px) {
+    .content input.input{
+        width: calc(50% - 10px);
+    }  
+}
 /* Main content end*/
 
 

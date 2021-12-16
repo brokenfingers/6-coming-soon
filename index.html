@@ -56,56 +56,61 @@
                 </div>
             </div>
             <form class="form">
-                <label for="email1">Email</label>
-                <input id="email1" type="email" required autocomplete="email" placeholder="Type your email">
-                <button class="btn" type="submit">Subscribe Now</button>
+               <label for="email">Email</label>
+                <input class="input" id="email" type="email" required autocomplete="email" placeholder="Email">
+                <button class="btn" type="submit">Send Message</button>
             </form>
             <img class="mouse" src="./img/mouse-temporary.png" alt="part of design">
         </div>
     </section>
     <main class="content">
         <div class="content-container row">
-            <div class="leftBlock">
-                <h2 >About startup</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga odit sequi magni obcaecati asperiores veniam dolore sunt reiciendis nobis dolorem minima inventore repudiandae quos odio rerum, commodi a iusto libero.</p>
-                <div class="progress-bars">
-                    <div class="progress-row">
-                        <p class="progress-title">UX Design</p>
-                        <div class="completed-bar"><p class="progress-percent">94%</p></div>
-                        <div class="grey-bar"></div>
+            <div class="column leftBlock">
+                <h2 class="content-title">About startup</h2>
+                <p class="content-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga odit sequi magni <a href="#" class="link">Matrox</a> asperiores veniam dolore sunt reiciendis nobis dolorem minima inventore repudiandae quos odio rerum, commodi a iusto libero.</p>
+                <div class="progress-bar">
+                    <div class=top>
+                        <div class="title">UX Design</div>
+                        <div class="value">90%</div>
                     </div>
-                    <div class="progress-row">
-                        <p class="progress-title">UX Design</p>
-                        <div class="completed-bar"><p class="progress-percent">86%</p></div>
-                        <div class="grey-bar"></div>
+                    <div class=bottom>
+                        <div class="bar" style="width: 90%;"></div>
                     </div>
-                    <div class="progress-row">
-                        <p class="progress-title">UX Design</p>
-                        <div class="completed-bar"><p class="progress-percent">90%</p></div>
-                        <div class="grey-bar"></div>
+                </div>
+                <div class="progress-bar">
+                    <div class=top>
+                        <div class="title">Web Design</div>
+                        <div class="value">44%</div>
+                    </div>
+                    <div class=bottom>
+                        <div class="bar" style="width: 44%;"></div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class=top>
+                        <div class="title">Web development</div>
+                        <div class="value">69%</div>
+                    </div>
+                    <div class=bottom>
+                        <div class="bar"  style="width: 69%;"></div>
                     </div>
                 </div>
             </div>
-            <div class="rightBlock">
-                <h2>Have any question?</h2>
-                <p>You can use contact form below or contact us via e-mail at threedesig@design.com. Contact form is fully working and very easy to customize.</p>
-                <!-- <form class="form">
-                    <div class="form-row name-row">
-                        <label for="name">Name</label>
-                        <input id="name" type="input" required autocomplete="name" placeholder="Name">
-                    </div>
-                    <div class="form-row email-row">
-                        <label for="email2">Email</label>
-                        <input id="email2" type="email" required autocomplete="email" placeholder="Email">
-                    </div>
-                    <div class="form-row message-row">
+            <div class="column rightBlock">
+                <h2 class="content-title">Have any question?</h2>
+                <p class="content-description">You can use contact form below or contact us via e-mail at <a class="link" href="mailto:support@bigree.cucu">support@bigree.cucu</a>  . Contact form is fully working and very easy to customize.</p>
+                <form class="form">
+                    
+                        <label for="name" >Name</label>
+                        <input class="input" id="name" type="input" required autocomplete="name" placeholder="Name">
+                        <label for="email">Email</label>
+                        <input class="input" id="email" type="email" required autocomplete="email" placeholder="Email">
                         <label for="message">Message</label>
-                        <input id="message" type="text" required autocomplete="off" placeholder="Message">
-                    </div>
-                    <div class="form-row button-row">
+                        <textarea class="input" id="message" type="text" required autocomplete="off" placeholder="Message"></textarea>
+                  
                         <button class="btn" type="submit">Send Message</button>
-                    </div>
-                </form> -->
+                    
+                </form>
 
             </div>
             

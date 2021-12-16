@@ -54,14 +54,19 @@
     margin-bottom: 15px;
 }
 
+.hero .main-description,
+.hero .clock{
+    margin-bottom: 30px;
+}
+
 .hero .main-description{
     color: #777;
     font-size: 18px;
-    margin-bottom: 45px;
+    
 }
 
-.hero .clock-digital{
-    margin-bottom: 45px;
+.hero .clock{
+    
 }
 /* HERO end*/
 

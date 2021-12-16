@@ -8,7 +8,7 @@
 
 /* components */
 
-/* @import '../components/button.css'; */
+@import '../components/button.css';
 @import '../components/clock.css';
 /* @import '../components/form.css'; */
 @import '../components/mouse.css';
@@ -21,7 +21,7 @@
 
 
 .bg-primary {
-    background-color: var(--bg-color);
+    background-color: var(--primary-color);
 }
 
 /* HERO start*/
@@ -29,7 +29,7 @@
 .hero{
     min-height: 100vh;
     padding-bottom: 30px;
-    background-color: var(--bg-color);
+    background-color: var(--primary-color);
     background: url(../../img/MicrosoftTeams-image.png);
     background-size: cover;
     background-position: center;
@@ -73,8 +73,36 @@
 
 /* Main content start*/
 
+.column > *{
+    margin-bottom: 20px;
+}
+.column > *:last-child{
+    margin-bottom: 0;
+}
 
+.content .content-title{
+    text-transform: uppercase;
+    font-size: 20px;
+    
+}
 
+.content .content-description{
+    font-size: 17px;
+    color: #999;
+    
+}
+
+.column .link{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+.column .link:hover{ 
+    text-decoration: underline;
+}
+
+.progress-bars .progress-row{
+    
+}
 /* Main content end*/
 
 

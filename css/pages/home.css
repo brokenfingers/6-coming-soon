@@ -1,143 +1,182 @@
 /* base */
-@import '../base/reset.css';
-@import '../base/variables.css';
-@import '../base/layout.css';
+@import "../base/reset.css";
+@import "../base/variables.css";
+@import "../base/layout.css";
 
 /* 3rd party */
-
+@import "../components/font-awesome.min.css";
 
 /* components */
 
-@import '../components/button.css';
-@import '../components/clock.css';
-@import '../components/form.css';
-@import '../components/mouse.css';
-@import '../components/progress-bar.css';
-
+@import "../components/button.css";
+@import "../components/clock.css";
+@import "../components/form.css";
+@import "../components/mouse.css";
+@import "../components/progress-bar.css";
 
 /* custom style below */
 
-
-
-
 .bg-primary {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 /* HERO start*/
 
-.hero{
-    min-height: 100vh;
-    padding-bottom: 30px;
-    background-color: var(--primary-color);
-    background: url(../../img/MicrosoftTeams-image.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+.hero {
+  min-height: 100vh;
+  padding-bottom: 30px;
+  background-color: var(--primary-color);
+  background: url(../../img/MicrosoftTeams-image.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .hero > .row-short {
-    text-align: center;
+  text-align: center;
 }
 
-.hero .logo{
-    width: 100%;
-    height: 45px;
-    margin-bottom: 45px;
-    object-fit: contain;
-    object-position: center;
+.hero .logo {
+  width: 100%;
+  height: 45px;
+  margin-bottom: 45px;
+  object-fit: contain;
+  object-position: center;
 }
 
-.hero .main-title{
-    font-size: 44px;
-    text-transform: uppercase;
-    margin-bottom: 15px;
+.hero .main-title {
+  font-size: 44px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
 .hero .main-description,
-.hero .clock{
-    margin-bottom: 30px;
+.hero .clock {
+  margin-bottom: 30px;
 }
 
-.hero .main-description{
-    color: #777;
-    font-size: 18px;
-    
+.hero .main-description {
+  color: #777;
+  font-size: 18px;
 }
 
-.hero .clock{
-    
+.hero .clock {
 }
 
-.hero  .form .input{
-    width: 80%;
-    margin: 0 15px 20px;
-    color:#fff;
-    border-color: currentColor;
-
+.hero .form .input {
+  width: 80%;
+  margin: 0 15px 20px;
+  color: #fff;
+  border-color: currentColor;
 }
 
-
-.hero .form .input::placeholder{
-    color:currentColor;
+.hero .form .input::placeholder {
+  color: currentColor;
 }
-
 
 /* HERO end*/
 
-
 /* Main content start*/
 
-.column > *{
-    margin-bottom: 20px;
+.column > * {
+  margin-bottom: 20px;
 }
-.column > *:last-child{
-    margin-bottom: 0;
-}
-
-.content .content-title{
-    text-transform: uppercase;
-    font-size: 20px;
-    
+.column > *:last-child {
+  margin-bottom: 0;
 }
 
-.content .content-description{
-    font-size: 17px;
-    color: #999;
-    
+.content .content-title {
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
-.column .link{
-    color: var(--secondary-color);
-    text-decoration: none;
-}
-.column .link:hover{ 
-    text-decoration: underline;
+.content .content-description {
+  font-size: 17px;
+  color: #999;
 }
 
-.progress-bars .progress-row{
-    
+.column .link {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+.column .link:hover {
+  text-decoration: underline;
 }
 
+.column.leftBlock {
+  margin-bottom: 45px;
+}
 
-.content .form .btn{
-    float: right;
+.content .form .btn {
+  float: right;
 }
 
 @media (min-width: 900px) {
-    .content input.input{
-        width: calc(50% - 10px);
-    }  
+  .content input.input {
+    width: calc(50% - 10px);
+  }
 }
 /* Main content end*/
 
-
-.socials{
-    background-color: chartreuse;
+/* Footer start*/
+.footer {
+  padding-top: 0;
 }
 
-/* Footer start*/
+.footer > *:last-child {
+  margin-bottom: 0;
+}
 
+.socials {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--secondary-color-light);
+  text-align: center;
+}
+.socials.row .fa {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 50px;
+  margin-right: 20px;
+  padding-top: 1px;
+  transition: all 0.5s;
+  border-radius: 50%;
+}
 
+.socials.row a:last-of-type .fa {
+  margin-right: 0;
+}
+
+.socials.row .fa:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+}
+
+.footer > .footer-container {
+  text-align: center;
+  color: var(--secondary-color-light);
+}
+
+.footer-container > .logo-white {
+  margin: 30px 0;
+}
+
+.footer-container > p {
+  margin-bottom: 10px;
+}
+
+.footer-container > p:last-of-type {
+  margin-bottom: 0;
+}
+
+.footer-container a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  color: var(--secondary-color-light);
+}
 
 /* Footer end*/

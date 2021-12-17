@@ -1,79 +1,74 @@
 .hero,
 .content,
 .footer {
-    width: 100%;
-    padding: 60px 0;
+  width: 100%;
+  padding: 60px 0;
 }
 
-.row-short{
-    display: inline-block;
-    width: 600px;
-    margin: 0 calc(50% - 300px);
-
+.row-short {
+  display: inline-block;
+  width: 600px;
+  margin: 0 calc(50% - 300px);
 }
-.row{
-    display:inline-block;
-    width: 800px;
-    margin: 0 calc(50% - 400px);
-}
-
-
-.leftBlock{
-    /* background-color: bisque; */
-    float: left;
-    width: 50%;
-    margin-right: 5%;
+.row {
+  display: inline-block;
+  width: 800px;
+  margin: 0 calc(50% - 400px);
 }
 
-.rightBlock{
-    /* background-color: aqua; */
-    float:left;
-    width: 45%;
-    
+.leftBlock {
+  /* background-color: bisque; */
+  float: left;
+  width: 45%;
+  margin-right: 10%;
 }
 
-
-
+.rightBlock {
+  /* background-color: aqua; */
+  float: left;
+  width: 45%;
+}
 
 @media (max-width: 900px) {
-    .row{
-        width: 600px;
-        margin: 0 calc(50% - 300px);
-    }
+  .row {
+    width: 600px;
+    margin: 0 calc(50% - 300px);
+  }
 }
 
 @media (max-width: 700px) {
-    .row,
-    .row-short{
-        width: 400px;
-        margin: 0 calc(50% - 200px);
-    }
-    .leftBlock,
-    .rightBlock
-    {   
-        float: none;
-        width: 100%;
-        margin-right: 0;
-    }
-
+  .row,
+  .row-short {
+    width: 400px;
+    margin: 0 calc(50% - 200px);
+  }
+  .leftBlock,
+  .rightBlock {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+  .footer-container > .trio > p {
+    width: 100%;
+  }
+  .footer-container > .trio > p::before {
+    display: none;
+  }
 }
 
 @media (max-width: 500px) {
-    .row,
-    .row-short{
-        width: 320px;
-        margin: 0 calc(50% - 160px);
-        
-    }
+  .row,
+  .row-short {
+    width: 320px;
+    margin: 0 calc(50% - 160px);
+  }
 }
 
 @media (max-width: 360px) {
-    .row,
-    .row-short{
-        width: 100%;
-        margin: 0;
-        padding: 15px;
-    }
+  .row,
+  .row-short {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+  }
 }
-
-

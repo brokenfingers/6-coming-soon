@@ -104,7 +104,7 @@
 }
 
 .column.leftBlock {
-  margin-bottom: 45px;
+  margin-bottom: 60px;
 }
 
 .content .form .btn {
@@ -131,6 +131,7 @@
   padding: 10px 0;
   border-bottom: 1px solid var(--secondary-color-light);
   text-align: center;
+  position: relative;
 }
 .socials.row .fa {
   width: 50px;
@@ -160,14 +161,50 @@
 
 .footer-container > .logo-white {
   margin: 30px 0;
+  max-height: 50px;
+  width: 100%;
+  object-fit: contain;
+  position: top;
+}
+
+.trio > p {
+  float: left;
+  padding: 0 10px;
+  position: relative;
+}
+
+.trio > p + p::before {
+  display: inline-block;
+  content: "";
+  height: 50%;
+  width: 2px;
+  position: absolute;
+  left: 0;
+  top: 25%;
+  transform: translate(-50% -50%);
+  background-color: var(--secondary-color-light);
 }
 
 .footer-container > p {
   margin-bottom: 10px;
+  display: block;
 }
-
 .footer-container > p:last-of-type {
   margin-bottom: 0;
+}
+
+.footer-container > div + p {
+  display: inline-block;
+}
+
+.footer .btn.btn-round {
+  border-radius: 2em;
+  padding: 0;
+  text-align: center;
+  right: -15px;
+  top: -29px;
+  margin: 0;
+  position: absolute;
 }
 
 .footer-container a {

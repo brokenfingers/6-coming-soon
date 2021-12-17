@@ -8,7 +8,7 @@ _6-coming-soon_
 
 This project is for **educational** porpuses only. Pull request are welcome, but priority for project authors! Thank you for your cooperation!
 
-Site published at: hhttps://github.com/brokenfingers/6-coming-soon
+Site published at: https://github.com/brokenfingers/6-coming-soon
 
 Design: [Sign up](https://media.discordapp.net/attachments/850245533838868480/850246473362178048/coming-soon-wide.png?width=957&height=670)
 

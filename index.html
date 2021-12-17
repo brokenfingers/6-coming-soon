@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content=" classth=device- classth, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="./css/pages/home.css">
-     <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+     <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+    <meta name="msapplication-config" content="./img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <!-- INITIAL STYLES: -->
     <!-- reset.css (+ base elements) -->
@@ -26,98 +26,114 @@
     <!-- mouse.css -->
     <!-- progress-bar.css -->
 
-    <!-- CUSTOM: -->
+    <!-- CUSTOM: --> 
     <!-- custom.css -->
     <title>Coming soon</title>
 </head>
 <body>
-    <main class="hero">
+    <section class="hero bg-primary">
         <div class="cousinGradient"><div class="hero-background"></div></div>
-        <div class="hero-container">
-            <img class="logo-colored" src="./img/favicon-template.png" alt="Company logo">
-            <h1>COMING SOON</h1>
-            <p>An awesome new company for web resources is coming very soon. Enter your email to request an early invitation!</p>
-            <ul class="clock-digital">
-                <li class="clock-group">
-                    <p class="clock-digits">432</p>
-                    <p class="clock-title">DAYS</p>
-                </li>
-                <li class="clock-group">
-                    <p class="clock-digits">09</p>
-                    <p class="clock-title">HOURS</p>
-                </li>
-                <li class="clock-group">
-                    <p class="clock-digits">37</p>
-                    <p class="clock-title">MINUTES</p>
-                </li>
-                <li class="clock-group">
-                    <p id="seconds" class="clock-digits">39</p>
-                    <p class="clock-title">SECONDS</p>
-                </li>
-            </ul>
+        <div class="hero-container row-short">
+            <img class="logo" src="./img/favicon-template.png" alt="Company logo">
+            <h1 class="main-title">Coming soon</h1>
+            <p class="main-description">An awesome new company for web resources is coming very soon. Enter your email to request an early invitation!</p>
+            <div class="clock">
+                <div class="time">
+                    <p class="value">432</p>
+                    <p class="title">DAYS</p>
+                </div>
+                <div class="time">
+                    <p class="value">09</p>
+                    <p class="title">HOURS</p>
+                </div>
+                <div class="time">
+                    <p class="value">37</p>
+                    <p class="title">MINUTES</p>
+                </div>
+                <div class="time">
+                    <p id="seconds" class="value">39</p>
+                    <p class="title">SECONDS</p>
+                </div>
+            </div>
             <form class="form">
-                <label for="email1">Email</label>
-                <input id="email1" type="email" required autocomplete="email" placeholder="Type your email">
-                <button class="btn" type="submit">Subscribe Now</button>
+               <label for="email">Email</label>
+                <input class="input" id="email" type="email" required autocomplete="email" placeholder="Email">
+                <button class="btn" type="submit">Send Message</button>
             </form>
             <img class="mouse" src="./img/mouse-temporary.png" alt="part of design">
         </div>
-    </main>
-    <section class="content">
-        <div class="content-container">
-            <div class="leftBlock">
-                <h2 >About startup</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga odit sequi magni obcaecati asperiores veniam dolore sunt reiciendis nobis dolorem minima inventore repudiandae quos odio rerum, commodi a iusto libero.</p>
-                <div class="progress-bars">
-                    <div class="progress-row">
-                        <p class="progress-title">UX Design</p>
-                        <div class="completed-bar"><p class="progress-percent">94%</p></div>
-                        <div class="grey-bar"></div>
+    </section>
+    <main class="content">
+        <div class="content-container row">
+            <div class="column leftBlock">
+                <h2 class="content-title">About startup</h2>
+                <p class="content-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga odit sequi magni <a href="#" class="link">Matrox</a> asperiores veniam dolore sunt reiciendis nobis dolorem minima inventore repudiandae quos odio rerum, commodi a iusto libero.</p>
+                <div class="progress-bar">
+                    <div class=top>
+                        <div class="title">UX Design</div>
+                        <div class="value">90%</div>
                     </div>
-                    <div class="progress-row">
-                        <p class="progress-title">UX Design</p>
-                        <div class="completed-bar"><p class="progress-percent">86%</p></div>
-                        <div class="grey-bar"></div>
+                    <div class=bottom>
+                        <div class="bar" style="width: 90%;"></div>
                     </div>
-                    <div class="progress-row">
-                        <p class="progress-title">UX Design</p>
-                        <div class="completed-bar"><p class="progress-percent">90%</p></div>
-                        <div class="grey-bar"></div>
+                </div>
+                <div class="progress-bar">
+                    <div class=top>
+                        <div class="title">Web Design</div>
+                        <div class="value">44%</div>
+                    </div>
+                    <div class=bottom>
+                        <div class="bar" style="width: 44%;"></div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class=top>
+                        <div class="title">Web development</div>
+                        <div class="value">69%</div>
+                    </div>
+                    <div class=bottom>
+                        <div class="bar"  style="width: 69%;"></div>
                     </div>
                 </div>
             </div>
-            <div class="rightBlock">
-                <h2>Have any question?</h2>
-                <p>You can use contact form below or contact us via e-mail at threedesig@design.com. Contact form is fully working and very easy to customize.</p>
+            <div class="column rightBlock">
+                <h2 class="content-title">Have any question?</h2>
+                <p class="content-description">You can use contact form below or contact us via e-mail at <a class="link" href="mailto:support@bigree.cucu">support@bigree.cucu</a>  . Contact form is fully working and very easy to customize.</p>
                 <form class="form">
-                    <div class="form-row name-row">
-                        <label for="name">Name</label>
-                        <input id="name" type="input" required autocomplete="name" placeholder="Name">
-                    </div>
-                    <div class="form-row email-row">
-                        <label for="email2">Email</label>
-                        <input id="email2" type="email" required autocomplete="email" placeholder="Email">
-                    </div>
-                    <div class="form-row message-row">
+                    
+                        <label for="name" >Name</label>
+                        <input class="input" id="name" type="input" required autocomplete="name" placeholder="Name">
+                        <label for="email">Email</label>
+                        <input class="input" id="email" type="email" required autocomplete="email" placeholder="Email">
                         <label for="message">Message</label>
-                        <input id="message" type="text" required autocomplete="off" placeholder="Message">
-                    </div>
-                    <div class="form-row button-row">
+                        <textarea class="input" id="message" type="text" required autocomplete="off" placeholder="Message"></textarea>
+                  
                         <button class="btn" type="submit">Send Message</button>
-                    </div>
+                    
                 </form>
 
             </div>
             
         </div>
-    </section>
-    <footer class="footer">
-        <div class="socials">
-
-        </div>
-        <div class="footer-container">
-
-        </div>
+    </main>
+    <footer class="footer bg-primary">
+    
+            <div class="socials row">
+                <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-tumblr"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-wifi"></i></a>
+             </div>
+            <div class="footer-container row-short">
+                <img class="logo-white"src="./img/logo-white.png" alt="white logo">
+                <p>Copyright © 2016 <a href="#" target="_blank">Matrox</a>   |   All Rights Reserved   |   Designed By <a href="#" target="_blank">TrendyTheme</a></p>
+                <p>Matrox pack includes complete websites not just homepages, it comes with full website demos.</p>
+                <p>Over 200+ ready html files only for 17$. Purchase <a href="#" target="_blank">Matrox</a> Now!</p>
+            </div>
+        
     </footer>
     <script>
         const timeHolder = document.getElementById('seconds');

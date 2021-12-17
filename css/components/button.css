@@ -1,17 +1,24 @@
-.btn{
-    background-color: var(--secondary-color);
-    color: #fff;
-    font-size: 20px;
-    padding: 0.5em 1.5em;
-    border-radius: 0.1em;
-    border: none;
+.btn {
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-size: 20px;
+  padding: 0.5em 1.5em;
+  border-radius: 0.1em;
+  border: none;
+  box-shadow: 0px 0px 6px #555;
 }
 
-.btn:hover{
-    background-color: var(--secondary-color-dark);
+.btn:hover {
+  background: rgb(234, 30, 99);
+  background: linear-gradient(
+    16deg,
+    rgba(234, 30, 99, 1) 0%,
+    rgb(250, 58, 122) 39%,
+    rgb(247, 28, 101) 82%
+  );
 
+  box-shadow: 0px 0px 2px #555;
 }
-
 
 /* .btn {
     background: rgb(26,65,190);

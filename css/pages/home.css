@@ -103,7 +103,8 @@
   text-decoration: underline;
 }
 
-.progress-bars .progress-row {
+.column.leftBlock {
+  margin-bottom: 45px;
 }
 
 .content .form .btn {
@@ -118,8 +119,8 @@
 /* Main content end*/
 
 /* Footer start*/
-.footer > * {
-  margin-bottom: 20px;
+.footer {
+  padding-top: 0;
 }
 
 .footer > *:last-child {
@@ -127,14 +128,15 @@
 }
 
 .socials {
-  border-bottom: 1px solid #fff;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--secondary-color-light);
   text-align: center;
 }
 .socials.row .fa {
   width: 50px;
   height: 50px;
   color: #fff;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 50px;
   margin-right: 20px;
   padding-top: 1px;
@@ -149,6 +151,32 @@
 .socials.row .fa:hover {
   background-color: #fff;
   color: var(--primary-color);
+}
+
+.footer > .footer-container {
+  text-align: center;
+  color: var(--secondary-color-light);
+}
+
+.footer-container > .logo-white {
+  margin: 30px 0;
+}
+
+.footer-container > p {
+  margin-bottom: 10px;
+}
+
+.footer-container > p:last-of-type {
+  margin-bottom: 0;
+}
+
+.footer-container a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  color: var(--secondary-color-light);
 }
 
 /* Footer end*/

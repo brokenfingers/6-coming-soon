@@ -62,6 +62,9 @@
     width: 320px;
     margin: 0 calc(50% - 160px);
   }
+  .footer .btn.btn-round {
+    left: calc(100% - 55px);
+  }
 }
 
 @media (max-width: 360px) {

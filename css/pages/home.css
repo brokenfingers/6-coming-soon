@@ -30,6 +30,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  text-align: center;
 }
 
 .hero > .row-short {
@@ -63,9 +64,13 @@
 .hero .clock {
 }
 
+.hero-container > .form {
+  margin-bottom: 45px;
+}
+
 .hero .form .input {
   width: 80%;
-  margin: 0 15px 20px;
+  margin: 0 15px 40px;
   color: #fff;
   border-color: currentColor;
 }

@@ -15,4 +15,21 @@
   margin-top: 6em;
   background-color: white;
   border-radius: 1.7em;
+  animation-name: mouseAnimation;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mouseAnimation {
+  0% {
+    margin-top: 6em;
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 22em;
+    opacity: 0;
+  }
 }
